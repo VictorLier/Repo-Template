@@ -20,7 +20,7 @@ jobs:
         with:
           enable-cache: true
       - run: uv sync --dev
-      - run: uv run pip-audit --progress-spinner .
+      - run: uv run pip-audit
 
   ruff:
     runs-on: ubuntu-latest
