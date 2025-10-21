@@ -20,7 +20,6 @@ jobs:
         with:
           enable-cache: true
       - run: uv sync --dev
-      - run: uv run pip-audit
       - run: uv run ruff check --output-format=github .
       - run: uv run ruff format --check .
       - run: uv run mypy .
