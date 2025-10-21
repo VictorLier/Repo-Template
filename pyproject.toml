@@ -1,7 +1,10 @@
 [project]
 name = "repo-template"
 dynamic = ["version"]
-requires-python = ">=3.10"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=2.0.2",
+]
 
 [dependency-groups]
 dev = [
@@ -14,3 +17,32 @@ dev = [
 
 [tool.pytest.ini_options]
 pythonpath = "."
+testpaths = ["tests"]
+addopts = "-v --strict-markers"
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
+
+[tool.mypy]
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+check_untyped_defs = true
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP", "B", "C4"]
+ignore = []
+
+[tool.ruff.format]
+line-ending = "lf"

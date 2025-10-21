@@ -8,6 +8,9 @@ on:
 permissions:
   contents: read
   security-events: write
+concurrency:
+  group: security-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   codeql:
@@ -21,5 +24,4 @@ jobs:
       - uses: github/codeql-action/init@v3
         with:
           languages: python
-      - uses: github/codeql-action/autobuild@v3
       - uses: github/codeql-action/analyze@v3
