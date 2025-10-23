@@ -62,7 +62,7 @@ uv sync
 ```
 Thats it.
 A virtual environment is now setup in the repo.
-VS code should ask wheter this `.venv` should be used.
+VS code should ask whether this `.venv` should be used.
 Otherwise select it as the python interpreter.
 
 ### Package management
