@@ -13,7 +13,7 @@ Press save when done.
 
 
 ### Signed commits
-One of the *default* branch protection rules are the need for **signed commits**.
+One of the *default* branch protection rules is the need for **signed commits**.
 They will ensure that commits are from a reliable source.
 Follow the [instructions](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification) to see more.
 
@@ -60,7 +60,7 @@ Then simply type:
 ```
 uv sync
 ```
-Thats it.
+That's it.
 A virtual environment is now setup in the repo.
 VS code should ask whether this `.venv` should be used.
 Otherwise select it as the python interpreter.
