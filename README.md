@@ -51,7 +51,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 # On macOS and Linux.
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-No other dependancies are neccessary.
+No other dependencies are necessary.
 
 
 ### Initialization
