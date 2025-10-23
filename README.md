@@ -40,7 +40,7 @@ When opening the repo in VS code it automatically asks and installs the extensio
 
 ## uv package manager
 This template is setup to work with the `uv` package manager.
-It however does not have to be used, if you prefere another way feel free to use it.
+It however does not have to be used, if you prefer another way feel free to use it.
 
 ### Installation
 To install the `uv` package manager, open a terminal and run:
