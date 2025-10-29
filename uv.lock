@@ -621,6 +621,7 @@ dependencies = [
     { name = "numpy", version = "2.0.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
     { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*'" },
     { name = "numpy", version = "2.3.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "sdu-core" },
 ]
 
 [package.dev-dependencies]
@@ -632,7 +633,10 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "numpy", specifier = ">=2.0.2" }]
+requires-dist = [
+    { name = "numpy", specifier = ">=2.0.2" },
+    { name = "sdu-core", git = "https://github.com/NationalOilwellVarco/flx-sdu-core?tag=v1.4.0" },
+]
 
 [package.metadata.requires-dev]
 dev = [
@@ -667,6 +671,11 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/71/30/3758bcf9e0b6a4193a6f51abf84254aba00887dfa8c20aba18aa366c5f57/ruff-0.14.2-py3-none-win_amd64.whl", hash = "sha256:0df3424aa5c3c08b34ed8ce099df1021e3adaca6e90229273496b839e5a7e1af", size = 13565279, upload-time = "2025-10-23T19:36:56.578Z" },
     { url = "https://files.pythonhosted.org/packages/2e/5d/aa883766f8ef9ffbe6aa24f7192fb71632f31a30e77eb39aa2b0dc4290ac/ruff-0.14.2-py3-none-win_arm64.whl", hash = "sha256:ea9d635e83ba21569fbacda7e78afbfeb94911c9434aff06192d9bc23fd5495a", size = 12554956, upload-time = "2025-10-23T19:36:58.714Z" },
 ]
+
+[[package]]
+name = "sdu-core"
+version = "1.4.0"
+source = { git = "https://github.com/NationalOilwellVarco/flx-sdu-core?tag=v1.4.0#01a3b501097fb115cd290656390366e62d73775a" }
 
 [[package]]
 name = "tomli"

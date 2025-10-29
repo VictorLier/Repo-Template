@@ -4,6 +4,7 @@ dynamic = ["version"]
 requires-python = ">=3.9"
 dependencies = [
     "numpy>=2.0.2",
+    "sdu_core",
 ]
 
 [dependency-groups]
@@ -13,6 +14,10 @@ dev = [
     "ruff>=0.6.0",
     "mypy>=1.11.0",
 ]
+
+[tool.uv.sources]
+sdu_core = {git = "https://github.com/NationalOilwellVarco/flx-sdu-core", tag = "v1.4.0"}
+
 
 [tool.pytest.ini_options]
 pythonpath = "."
