@@ -4,7 +4,7 @@ dynamic = ["version"]
 requires-python = ">=3.9"
 dependencies = [
     "numpy>=2.0.2",
-    "sdu_core",
+    "sdu_core>=1.4.0",
 ]
 
 [dependency-groups]
