@@ -1,10 +1,11 @@
 [project]
 name = "repo-template"
 dynamic = ["version"]
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 dependencies = [
     "numpy>=2.0.2",
     "sdu_core>=1.4.0",
+    "pypallas>=2.2.1",
 ]
 
 [dependency-groups]
@@ -17,7 +18,7 @@ dev = [
 
 [tool.uv.sources]
 sdu_core = {git = "https://github.com/NationalOilwellVarco/flx-sdu-core", tag = "v1.4.0"}
-
+pypallas = {git = "https://github.com/NationalOilwellVarco/flx-pypallas", tag = "v2.2.1"}
 
 [tool.pytest.ini_options]
 pythonpath = "."
