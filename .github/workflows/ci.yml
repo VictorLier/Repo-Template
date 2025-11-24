@@ -12,7 +12,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Configure Git for private repos
         run: git config --global url."https://${{ secrets.NOV }}@github.com/".insteadOf "https://github.com/"
       - uses: actions/setup-python@v6
@@ -32,7 +32,7 @@ jobs:
       matrix: { python-version: ["3.9", "3.10","3.11","3.12","3.13","3.14"] }
       fail-fast: false
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Configure Git for private repos
         run: git config --global url."https://${{ secrets.NOV }}@github.com/".insteadOf "https://github.com/"
       - uses: actions/setup-python@v6
